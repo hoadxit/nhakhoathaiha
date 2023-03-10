@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	  <head>
-	  <title>Home</title>
+	  <title>Contacts</title>
 	  <meta charset="utf-8">
 	  <meta name = "format-detection" content = "telephone=no" />
 	  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -13,6 +13,7 @@
 	  <script src="js/scroll_to_top.js"></script>
 	  <script src="js/script.js"></script>
 	  <script src="js/sForm.js"></script>
+	  <script src="js/TMForm.js"></script>
 	  <script src="js/jquery.equalheights.js"></script>
 	  <script src="js/superfish.js"></script>
 	  <script src="js/jquery.mobilemenu.js"></script>
@@ -23,12 +24,7 @@
 	  <link rel="stylesheet" href="font/font-awesome.css" type="text/css" media="screen">
 	  <!-- fontello font -->
 
-	  <script src="js/camera.js"></script>
-	  <!--[if (gt IE 9)|!(IE)]><!-->
-	  <script src="js/jquery.mobile.customized.min.js"></script>
-	  <!--<![endif]-->
-
-	  <!--[if lt IE 9]>
+	  <!--[if lt IE 8]>
 		 <div style=' clear: both; text-align:center; position: relative;'>
 			<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
 			  <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
@@ -63,7 +59,7 @@
 					 		<h1><a href="index.html"><img src="images/logo.png" alt="Gear"></a></h1>
 	 							<nav>
 	 								<ul class="sf-menu header_menu">
-	 									<li class="current"><a href="index.html">Home<strong></strong></a></li>
+	 									<li><a href="index.html">Home<strong></strong></a></li>
 	 									<li><a href="index-1.html">About Us<strong></strong></a></li>
 	 									<li><a href="index-2.html"><span></span>Services<strong></strong></a>
 	 										  <ul class='submenu'>
@@ -85,7 +81,7 @@
 	 									 
 	 									 <li><a href="index-3.html">Gallery<strong></strong></a></li>
 	 									 <li><a href="index-4.html">Testimonials<strong></strong></a></li>
-	 									 <li><a href="index-5.html">Contacts<strong></strong></a></li>
+	 									 <li class="current"><a href="index-5.html">Contacts<strong></strong></a></li>
 	 								</ul>
 	 							</nav>
 					 	</div>
@@ -100,112 +96,66 @@
 <!--=======content================================-->
 
   
-		  <div class="slider_wrapper">
-          <div class="" id="camera_wrap">
-              <div data-src="images/slide1.jpg">
-                  <div class="caption fadeIn">
-                      <div class="caption_bg">
-                          <span class="slider_txt1">The Latest Trends in Esthetic Dental Care</span>
-                          <br>
-                          <a href="#" class="more_btn4">Make an Appointment</a>
-                      </div>
-                  </div>
-              </div>
-              <div data-src="images/slide2.jpg">
-                  <div class="caption fadeIn">
-                      <div class="caption_bg">
-                          <span class="slider_txt1"> Enjoy Your New Dazzling Smile!</span>
-                          <br>
-                          <a href="#" class="more_btn4">Make an Appointment</a>
-                      </div>
-                  </div>
-              </div>
-              <div data-src="images/slide3.jpg">
-                  <div class="caption fadeIn">
-                      <div class="caption_bg">
-                          <span class="slider_txt1">Performing Cosmetic Dentistry Miracles </span>
-                          <br>
-                          <a href="#" class="more_btn4">Make an Appointment</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
 
-		  <div class="container_12">
+			<div class="container_12">
 				<div class="grid_12">
-				
-				
-					<div class="wrapper">
-						<div class="banner1">
-							<p>Zoom Whitening ONLY $300</p>
-							<a href="#" class="link1">More Info</a>
+						
+						<div class="grid_5 alpha">
+							<h2>Find Us</h2>
+							<figure class="img_inner">
+                  <iframe src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Brooklyn,+New+York,+NY,+United+States&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=61.282355,146.513672&amp;ie=UTF8&amp;hq=&amp;hnear=Brooklyn,+Kings,+New+York&amp;ll=40.649974,-73.950005&amp;spn=0.01628,0.025663&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+              </figure>
+              <address>	
+                  <dl>
+                      <dt>8901 Marmora Road,<br>Glasgow, D04 89GR.</dt>
+                      <dd><span>Freephone:</span>+1 800 559 6580</dd>
+                      <dd><span>Telephone:</span>+1 959 603 6035</dd>
+                      <dd><span>FAX:</span>+1 504 889 9898</dd>
+                      <dd>E-mail: <a href="#" class="link6">mail@demolink.org</a></dd>
+                  </dl>
+              </address>
+							
 						</div>
 						
-						<div class="banner1 v2">
-							<p>Dental implant INFO</p>
-							<a href="#" class="link1">More Info</a>
+						<div class="grid_7 omega">
+							<h2>Get In Touch</h2>
+							<form id="contact-form">
+									<div class="success-message">Contact form submitted! <strong>We will be in touch soon.</strong></div>
+									<div class="wrapper">
+										<label class="name">
+											<input type="text" placeholder="Name:" data-constraints="@Required @JustLetters" />
+											<span class="empty-message">*This field is required.</span>
+											<span class="error-message">*This is not a valid name.</span>
+										</label>
+										<label class="email">
+											<input type="text" placeholder="Email:" data-constraints="@Required @Email" />
+											<span class="empty-message">*This field is required.</span>
+											<span class="error-message">*This is not a valid email.</span>
+										</label>
+										<label class="phone">
+											<input type="text" placeholder="Phone:" data-constraints="@Required @JustNumbers"/>
+											<span class="empty-message">*This field is required.</span>
+											<span class="error-message">*This is not a valid phone.</span>
+										</label>
+									</div>
+									<label class="message">
+										<textarea placeholder="Message:" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+										<span class="empty-message">*This field is required.</span>
+										<span class="error-message">*The message is too short.</span>
+									</label>
+									<div  class="form_btns">
+										<!-- <a href="#" data-type="reset" class="link8">Clear</a> -->
+										<a href="#" data-type="submit" class="more_btn">Submit</a>
+									</div>  
+								</form>
+							
 						</div>
 						
-						<div class="banner1 v3">
-							<p>Consumer guide to DENTISTRY</p>
-							<a href="#" class="link1">More Info</a>
-						</div>
-					</div>
-					
-					
-					<div class="wrapper hline2">
-						<div class="grid_7 alpha">
-							<img src="images/page1_pic1.jpg" alt="" class="img1">
-							<h3>Welcome to Our Clinic!</h3>
-							<p><span class="color1">Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</span><br><br>Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis.</p>
-						</div>
 						
-						<div class="grid_4 prefix_1 omega">
-							<div class="box-1">
-								<ul class="list1">
-									<li><a href="#">Smile Design</a></li>
-									<li><a href="#">Porcelain Veneers</a></li>
-									<li><a href="#">Zoom Whitening</a></li>
-									<li><a href="#">Invisalign</a></li>
-									<li><a href="#">Tooth Bonding</a></li>
-									<li><a href="#">White Fillings</a></li>
-									<li><a href="#">Teeth Whitening</a></li>
-								</ul>
-								<a href="#" class="link2">More Services</a>
-							</div>
-						</div>
-					</div>
-					
-					
-					<div class="wrapper">
-						<div class="grid_7 alpha">
-							<h2>The Latest Trends in Esthetic  Dental Care</h2>
-							<p>Praesent vestibulum molestie lacus. Aenean nonummy. Hendrerit mauris phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus</p>
-							<ul class="listWithMarker">
-								<li><a href="#">Praesent vestibulum molestie lacus</a></li>
-								<li><a href="#">Aenean nonummy</a></li>
-								<li><a href="#">Hendrerit mauris phasellus porta</a></li>
-								<li><a href="#">Fusce suscipit varius mi. Cum sociis natoque</a></li>
-								<li><a href="#">Penatibus et magnis dis parturient montes</a></li>
-							</ul>
-						</div>
 						
-						<div class="grid_4 prefix_1 omega">
-							<div class="box-2">
-								<div class="img_container">
-									<img src="images/page1_pic2.jpg" alt="">
-								</div>
-								<p>„ Praesent vestibulum molestie lacus. Aenean nonummy. Hendrerit mauris phasellus.“</p>
-								<a href="#" class="link3">Mary Gofman, <span>35 years</span></a>
-							</div>
-						</div>
-					</div>
-					
-					<div class="clear"></div>
-						 
-					 </div>
+						
 				</div>
+			</div>
 
 	 </div>
 	 <!--=======footer=================================-->
@@ -258,7 +208,7 @@
 								
 							</div>
 							
-							<p class="txt_priv">Diamond &copy; <span id="copyright-year"></span> <a href="index-6.html">Privacy Policy</a><br><!--{%FOOTER_LINK} --></p>
+							<p class="txt_priv">Diamond &copy; <span id="copyright-year"></span> <a href="index-6.html">Privacy Policy</a></p>
 						</div>
 
 					 </div>
@@ -266,28 +216,7 @@
 		  </footer>
 </div>
 <script type="text/javascript">
-	 $(document).ready(function(){
-		
-		jQuery('#camera_wrap').camera({
-        loader: false,
-        pagination: true,
-        thumbnails: false,
-        height: '24.11458%',
-        fx: 'simpleFade',
-        rows: '1',
-        slicedCols: '1',
-        slicedRows: '1',
-        caption: false
-      });
 
-	 });
-
-	 $(document).ready(function(){
-		// Initialize the gallery
-		$('.magnifier2').touchTouch();
-	 });
-	 
-	 
 	 function myFocus(element){
        if (element.value == element.defaultValue){
            element.focus();
@@ -300,6 +229,10 @@
            element.value = element.defaultValue;
        }
     }
+    
+    $(window).load(function(){
+			$('#contact-form').TMForm({ownerEmail:'#'})
+		})
 
 </script>
 </body>

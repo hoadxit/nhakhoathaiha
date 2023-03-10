@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	  <head>
-	  <title>Home</title>
+	  <title>Gallery</title>
 	  <meta charset="utf-8">
 	  <meta name = "format-detection" content = "telephone=no" />
 	  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -22,13 +22,40 @@
 	  <!-- font-awesome font -->
 	  <link rel="stylesheet" href="font/font-awesome.css" type="text/css" media="screen">
 	  <!-- fontello font -->
+	  
+	  <script src="js/jquery.carouFredSel-6.1.0.js"></script>
+     <script src="js/jquery.touchSwipe.min.js"></script>
+     <script>
+            $(window).load( function(){
+                //  Responsive layout, resizing the items
+                $('#carousel2').carouFredSel({
+                    auto: false,
+                    responsive: true,
+                    width: '100%',      
+                    scroll: 1,
+                    prev: '#prev',
+                    next: '#next',
+                    pagination: false,
+                    mousewheel: false,
+                    swipe: {
+                        onMouse: true,
+                        onTouch: true
+                    },
+                    items: {
+                      width:380,
+                      height: 'auto',   //  optionally resize item-height
+                        visible: {
+                            min: 2,
+                            max: 2
+                        }
+                    }
+                });
+                
 
-	  <script src="js/camera.js"></script>
-	  <!--[if (gt IE 9)|!(IE)]><!-->
-	  <script src="js/jquery.mobile.customized.min.js"></script>
-	  <!--<![endif]-->
+            });
+        </script>
 
-	  <!--[if lt IE 9]>
+	  <!--[if lt IE 8]>
 		 <div style=' clear: both; text-align:center; position: relative;'>
 			<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
 			  <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
@@ -63,7 +90,7 @@
 					 		<h1><a href="index.html"><img src="images/logo.png" alt="Gear"></a></h1>
 	 							<nav>
 	 								<ul class="sf-menu header_menu">
-	 									<li class="current"><a href="index.html">Home<strong></strong></a></li>
+	 									<li><a href="index.html">Home<strong></strong></a></li>
 	 									<li><a href="index-1.html">About Us<strong></strong></a></li>
 	 									<li><a href="index-2.html"><span></span>Services<strong></strong></a>
 	 										  <ul class='submenu'>
@@ -83,7 +110,7 @@
 	 									 </li>
 	 	
 	 									 
-	 									 <li><a href="index-3.html">Gallery<strong></strong></a></li>
+	 									 <li class="current"><a href="index-3.html">Gallery<strong></strong></a></li>
 	 									 <li><a href="index-4.html">Testimonials<strong></strong></a></li>
 	 									 <li><a href="index-5.html">Contacts<strong></strong></a></li>
 	 								</ul>
@@ -100,107 +127,50 @@
 <!--=======content================================-->
 
   
-		  <div class="slider_wrapper">
-          <div class="" id="camera_wrap">
-              <div data-src="images/slide1.jpg">
-                  <div class="caption fadeIn">
-                      <div class="caption_bg">
-                          <span class="slider_txt1">The Latest Trends in Esthetic Dental Care</span>
-                          <br>
-                          <a href="#" class="more_btn4">Make an Appointment</a>
-                      </div>
-                  </div>
-              </div>
-              <div data-src="images/slide2.jpg">
-                  <div class="caption fadeIn">
-                      <div class="caption_bg">
-                          <span class="slider_txt1"> Enjoy Your New Dazzling Smile!</span>
-                          <br>
-                          <a href="#" class="more_btn4">Make an Appointment</a>
-                      </div>
-                  </div>
-              </div>
-              <div data-src="images/slide3.jpg">
-                  <div class="caption fadeIn">
-                      <div class="caption_bg">
-                          <span class="slider_txt1">Performing Cosmetic Dentistry Miracles </span>
-                          <br>
-                          <a href="#" class="more_btn4">Make an Appointment</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
 
 		  <div class="container_12">
 				<div class="grid_12">
 				
-				
-					<div class="wrapper">
-						<div class="banner1">
-							<p>Zoom Whitening ONLY $300</p>
-							<a href="#" class="link1">More Info</a>
-						</div>
-						
-						<div class="banner1 v2">
-							<p>Dental implant INFO</p>
-							<a href="#" class="link1">More Info</a>
-						</div>
-						
-						<div class="banner1 v3">
-							<p>Consumer guide to DENTISTRY</p>
-							<a href="#" class="link1">More Info</a>
-						</div>
-					</div>
-					
-					
-					<div class="wrapper hline2">
-						<div class="grid_7 alpha">
-							<img src="images/page1_pic1.jpg" alt="" class="img1">
-							<h3>Welcome to Our Clinic!</h3>
-							<p><span class="color1">Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</span><br><br>Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis.</p>
-						</div>
-						
-						<div class="grid_4 prefix_1 omega">
-							<div class="box-1">
-								<ul class="list1">
-									<li><a href="#">Smile Design</a></li>
-									<li><a href="#">Porcelain Veneers</a></li>
-									<li><a href="#">Zoom Whitening</a></li>
-									<li><a href="#">Invisalign</a></li>
-									<li><a href="#">Tooth Bonding</a></li>
-									<li><a href="#">White Fillings</a></li>
-									<li><a href="#">Teeth Whitening</a></li>
-								</ul>
-								<a href="#" class="link2">More Services</a>
-							</div>
-						</div>
-					</div>
-					
+			
 					
 					<div class="wrapper">
-						<div class="grid_7 alpha">
-							<h2>The Latest Trends in Esthetic  Dental Care</h2>
-							<p>Praesent vestibulum molestie lacus. Aenean nonummy. Hendrerit mauris phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus</p>
-							<ul class="listWithMarker">
-								<li><a href="#">Praesent vestibulum molestie lacus</a></li>
-								<li><a href="#">Aenean nonummy</a></li>
-								<li><a href="#">Hendrerit mauris phasellus porta</a></li>
-								<li><a href="#">Fusce suscipit varius mi. Cum sociis natoque</a></li>
-								<li><a href="#">Penatibus et magnis dis parturient montes</a></li>
-							</ul>
+						<h2>Gallery</h2>
+						
+						<div class="grid_10 prefix_1">
+							<div class="list_carousel2 responsive">
+						                <ul id="carousel2">
+						                    <li>
+						                    	<figure><a href="images/page4_big_pic1.jpg" class="magnifier2" ><img src="images/page4_pic1.jpg" alt=""><span class="zoom"></span></a></figure>
+						                    </li>
+						                    <li>
+						                    	<figure><a href="images/page4_big_pic2.jpg" class="magnifier2" ><img src="images/page4_pic2.jpg" alt=""><span class="zoom"></span></a></figure>
+						                    </li>
+						                    <li>
+						                    	<figure><a href="images/page4_big_pic3.jpg" class="magnifier2" ><img src="images/page4_pic3.jpg" alt=""><span class="zoom"></span></a></figure>
+						                    </li>
+						                    <li>
+						                    	<figure><a href="images/page4_big_pic4.jpg" class="magnifier2" ><img src="images/page4_pic4.jpg" alt=""><span class="zoom"></span></a></figure>
+						                    </li>
+						
+						                    
+						                </ul>
+						                <div class="clear"></div>
+						              	<a class="prev2" id="prev"  href="javascript:;"></a>
+						                <a class="next2" id="next"  href="javascript:;"></a> 
+						            </div>
 						</div>
 						
-						<div class="grid_4 prefix_1 omega">
-							<div class="box-2">
-								<div class="img_container">
-									<img src="images/page1_pic2.jpg" alt="">
-								</div>
-								<p>„ Praesent vestibulum molestie lacus. Aenean nonummy. Hendrerit mauris phasellus.“</p>
-								<a href="#" class="link3">Mary Gofman, <span>35 years</span></a>
-							</div>
-						</div>
+						
 					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
 					
 					<div class="clear"></div>
 						 
@@ -258,7 +228,7 @@
 								
 							</div>
 							
-							<p class="txt_priv">Diamond &copy; <span id="copyright-year"></span> <a href="index-6.html">Privacy Policy</a><br><!--{%FOOTER_LINK} --></p>
+							<p class="txt_priv">Diamond &copy; <span id="copyright-year"></span> <a href="index-6.html">Privacy Policy</a></p>
 						</div>
 
 					 </div>
@@ -266,28 +236,12 @@
 		  </footer>
 </div>
 <script type="text/javascript">
-	 $(document).ready(function(){
-		
-		jQuery('#camera_wrap').camera({
-        loader: false,
-        pagination: true,
-        thumbnails: false,
-        height: '24.11458%',
-        fx: 'simpleFade',
-        rows: '1',
-        slicedCols: '1',
-        slicedRows: '1',
-        caption: false
-      });
 
-	 });
-
-	 $(document).ready(function(){
+	$(document).ready(function(){
 		// Initialize the gallery
 		$('.magnifier2').touchTouch();
-	 });
-	 
-	 
+	});
+
 	 function myFocus(element){
        if (element.value == element.defaultValue){
            element.focus();
